@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-suit="pentacles" data-rank="4" data-pip-count="4">
+<title id="title">Four of Pentacles</title><desc id="desc">Original 4-pip Pentacles composition for Four of Pentacles.</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M70 155 Q200 105 330 155 M70 455 Q200 505 330 455" stroke-width="2"/><g data-pip="1" transform="translate(135 235)"><circle r="24"/><path d="M0 -18 L5 -6 L18 -6 L8 2 L12 16 L0 8 L-12 16 L-8 2 L-18 -6 L-5 -6 Z"/></g><g data-pip="2" transform="translate(265 235)"><circle r="24"/><path d="M0 -18 L5 -6 L18 -6 L8 2 L12 16 L0 8 L-12 16 L-8 2 L-18 -6 L-5 -6 Z"/></g><g data-pip="3" transform="translate(135 375)"><circle r="24"/><path d="M0 -18 L5 -6 L18 -6 L8 2 L12 16 L0 8 L-12 16 L-8 2 L-18 -6 L-5 -6 Z"/></g><g data-pip="4" transform="translate(265 375)"><circle r="24"/><path d="M0 -18 L5 -6 L18 -6 L8 2 L12 16 L0 8 L-12 16 L-8 2 L-18 -6 L-5 -6 Z"/></g></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">FOUR OF PENTACLES</text><text x="200" y="555" font-size="15">PENTACLES-4</text></g>
+</svg>

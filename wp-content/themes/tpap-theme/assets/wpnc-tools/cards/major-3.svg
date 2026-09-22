@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="empress-garden">
+<title id="title">The Empress</title><desc id="desc">a crowned empress seated among wheat and the Venus emblem</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="170" r="16"/><path d="M170 251 Q200 202 230 251"/><path d="M150 390 Q200 330 250 390 M135 410 H265"/><path d="M175 142 l10-28 15 22 15-22 10 28 M110 455 Q105 390 90 355 M130 455 Q128 395 118 365 M290 455 Q295 390 310 355 M270 455 Q272 395 282 365"/><circle cx="305" cy="260" r="22"/><path d="M305 282 V330 M287 307 H323"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE EMPRESS</text><text x="200" y="555" font-size="15">MAJOR-3</text></g>
+</svg>

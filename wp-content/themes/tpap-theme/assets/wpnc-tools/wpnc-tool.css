@@ -1,0 +1,269 @@
+/* Namespaced, theme-safe styles for the shared interactive tool shell. */
+[data-wpnc-tool].wpnc-tool { --wpnc-ink:#1d2433; --wpnc-muted:#5b6475; --wpnc-accent:#7657a8; --wpnc-accent-strong:#52347f; --wpnc-surface:#fff; --wpnc-soft:#f4f0fa; box-sizing:border-box; max-width:760px; margin:clamp(1rem,4vw,4rem) auto; padding:clamp(1.25rem,4vw,3rem); color:var(--wpnc-ink); background:var(--wpnc-surface); border:1px solid color-mix(in srgb,var(--wpnc-accent) 18%,transparent); border-radius:1.25rem; box-shadow:0 1rem 3rem rgba(31,22,50,.08); font:400 1rem/1.55 system-ui,sans-serif; }
+[data-wpnc-tool] *, [data-wpnc-tool] *::before, [data-wpnc-tool] *::after { box-sizing:border-box; }
+[data-wpnc-tool] [hidden] { display:none !important; }
+[data-wpnc-tool] .wpnc-tool__header { border-bottom:1px solid color-mix(in srgb,var(--wpnc-accent) 18%,transparent); padding-bottom:1.25rem; margin-bottom:1.5rem; }
+[data-wpnc-tool] .wpnc-tool__eyebrow { color:var(--wpnc-accent-strong); font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+[data-wpnc-tool] h1, [data-wpnc-tool] h2 { line-height:1.15; margin:.35rem 0 1rem; }
+[data-wpnc-tool] h1 { font-size:clamp(1.7rem,4vw,2.7rem); }
+[data-wpnc-tool] h2 { font-size:1.35rem; }
+[data-wpnc-tool] label, [data-wpnc-tool] legend { display:block; font-weight:650; margin:1rem 0 .4rem; }
+[data-wpnc-tool] textarea, [data-wpnc-tool] input, [data-wpnc-tool] select { width:100%; border:1px solid #b9b4c5; border-radius:.55rem; background:#fff; color:var(--wpnc-ink); font:inherit; padding:.7rem .8rem; }
+[data-wpnc-tool] textarea { resize:vertical; min-height:7rem; }
+[data-wpnc-tool] button { margin:1rem .5rem 0 0; border:0; border-radius:99px; background:var(--wpnc-accent); color:#fff; cursor:pointer; font:650 .95rem/1.2 system-ui,sans-serif; padding:.75rem 1.1rem; }
+[data-wpnc-tool] button:hover { background:var(--wpnc-accent-strong); }
+[data-wpnc-tool] button:focus-visible, [data-wpnc-tool] input:focus-visible, [data-wpnc-tool] textarea:focus-visible, [data-wpnc-tool] select:focus-visible { outline:3px solid #d9c6ff; outline-offset:2px; }
+[data-wpnc-tool] button:disabled { cursor:wait; opacity:.65; }
+[data-wpnc-tool] fieldset { border:1px solid #ded9e6; border-radius:.65rem; margin:1rem 0; padding:.7rem 1rem 1rem; }
+[data-wpnc-tool] fieldset select { max-width:14rem; }
+[data-wpnc-tool] .wpnc-tool__grid { display:grid; gap:1rem; grid-template-columns:repeat(2,minmax(0,1fr)); }
+[data-wpnc-tool] .wpnc-tool__result { background:var(--wpnc-soft); border-left:4px solid var(--wpnc-accent); margin-top:1.5rem; padding:1rem 1.1rem; }
+[data-wpnc-tool] .wpnc-tool__result:focus { outline:2px solid var(--wpnc-accent); outline-offset:2px; }
+[data-wpnc-tool] .wpnc-tool__disclaimer { color:var(--wpnc-muted); font-size:.8rem; margin:1.5rem 0 0; }
+[data-wpnc-tool] .wpnc-tool__timer { font-variant-numeric:tabular-nums; font-size:clamp(2rem,8vw,4rem); font-weight:700; letter-spacing:.05em; text-align:center; margin:1rem 0; }
+[data-wpnc-tool] .wpnc-tool__chat { background:var(--wpnc-soft); border-radius:.7rem; padding:.75rem 1rem; }
+[data-wpnc-tool] .wpnc-tool__chat li { margin:.55rem 0; }
+[data-wpnc-tool] .wpnc-tool__actions { display:flex; flex-wrap:wrap; gap:.25rem; }
+[data-wpnc-tool] ol { padding-left:1.4rem; }
+[data-wpnc-tool] meter { display:block; width:100%; height:1rem; }
+[data-wpnc-tool] .wpnc-tool__radar { display:block; color:var(--wpnc-accent); max-width:210px; margin:0 auto 1rem; }
+html:has(.wpnc-tool--compatibility), body:has(.wpnc-tool--compatibility), html:has(.wpnc-tool--intuition_quiz), body:has(.wpnc-tool--intuition_quiz) { max-width:100%; overflow-x:clip; }
+html:has(.wpnc-tool--tarot_hub), body:has(.wpnc-tool--tarot_hub), html:has(.wpnc-tool--tarot_reading), body:has(.wpnc-tool--tarot_reading) { max-width:100%; overflow-x:clip; }
+@media (max-width:600px) { [data-wpnc-tool].wpnc-tool { border-radius:.75rem; margin:1rem 0; padding:1.1rem; } [data-wpnc-tool] .wpnc-tool__grid { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { [data-wpnc-tool] *, [data-wpnc-tool] *::before, [data-wpnc-tool] *::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; } }
+
+/* Shared tarot studio shell; site palettes and skins arrive from config. */
+[data-wpnc-tool].wpnc-tool--tarot_hub,
+[data-wpnc-tool].wpnc-tool--tarot_reading {
+  --wpnc-night:#1a1030;
+  --wpnc-night-2:#2f1b53;
+  --wpnc-gold:#e0a83c;
+  --wpnc-gold-bright:#f3c86d;
+  --wpnc-cream:#fbf6ef;
+  --wpnc-line:#eadfce;
+  --wpnc-card-surface:#fff;
+  --wpnc-privacy-surface:#f3eadc;
+  --wpnc-on-dark:#fff;
+  width:min(1080px,calc(100vw - 24px));
+  max-width:none;
+  margin:clamp(1rem,3vw,2.5rem) 0 clamp(2rem,5vw,4rem) 50%;
+  padding:0;
+  overflow:hidden;
+  transform:translateX(-50%);
+  border-color:var(--wpnc-line);
+  border-radius:clamp(1rem,3vw,1.75rem);
+  background:var(--wpnc-cream);
+  box-shadow:0 1.5rem 4.5rem rgba(26,16,48,.14);
+  font-family:var(--fpq-font-sans,Manrope,system-ui,sans-serif);
+}
+[data-wpnc-tool].wpnc-tool--tarot_hub p,
+[data-wpnc-tool].wpnc-tool--tarot_reading p { color:inherit; font-size:inherit; line-height:inherit; margin:0; }
+[data-wpnc-tool] .wpnc-tarot__hero { position:relative; isolation:isolate; min-height:360px; padding:clamp(2.25rem,7vw,5rem) clamp(1.25rem,7vw,5rem); overflow:hidden; color:#fff; background:radial-gradient(circle at 76% 22%,rgba(224,168,60,.18),transparent 24%),linear-gradient(137deg,var(--wpnc-night),var(--wpnc-night-2)); }
+[data-wpnc-tool] .wpnc-tarot__hero--compact { min-height:260px; padding-block:clamp(2rem,5vw,3.75rem); }
+[data-wpnc-tool] .wpnc-tarot__hero::after { content:""; position:absolute; inset:0; z-index:-1; opacity:.32; background-image:radial-gradient(circle,#fff 0 1px,transparent 1.5px),radial-gradient(circle,var(--wpnc-gold-bright) 0 1px,transparent 1.5px); background-position:13% 29%,78% 63%; background-size:83px 83px,127px 127px; }
+[data-wpnc-tool] .wpnc-tarot__hero h2 { max-width:780px; margin:.4rem 0 1rem; color:#fff; font-family:var(--fpq-font-serif,Georgia,serif); font-size:clamp(2.35rem,7vw,5.2rem); font-weight:400; letter-spacing:-.035em; line-height:.98; text-wrap:balance; }
+[data-wpnc-tool] .wpnc-tarot__hero--compact h2 { font-size:clamp(2.2rem,6vw,4.25rem); }
+[data-wpnc-tool] .wpnc-tarot__hero > p:last-of-type { position:relative; z-index:1; max-width:620px; color:#e9e1f3; font-size:clamp(1rem,2vw,1.18rem); line-height:1.7; }
+[data-wpnc-tool] .wpnc-tarot__hero .wpnc-tool__eyebrow { color:var(--wpnc-gold-bright); }
+[data-wpnc-tool] .wpnc-tarot__orbit { position:absolute; right:-4rem; bottom:-10rem; width:min(48vw,480px); aspect-ratio:1; opacity:.6; }
+[data-wpnc-tool] .wpnc-tarot__orbit::before,
+[data-wpnc-tool] .wpnc-tarot__orbit::after,
+[data-wpnc-tool] .wpnc-tarot__orbit i { content:""; position:absolute; inset:8%; border:1px solid rgba(243,200,109,.36); border-radius:50%; transform:rotate(-18deg) scaleY(.55); }
+[data-wpnc-tool] .wpnc-tarot__orbit::after { inset:24%; transform:rotate(24deg) scaleX(.65); }
+[data-wpnc-tool] .wpnc-tarot__orbit i:nth-child(1) { inset:38%; background:var(--wpnc-gold); border:0; box-shadow:0 0 50px rgba(224,168,60,.5); transform:none; }
+[data-wpnc-tool] .wpnc-tarot__orbit i:nth-child(2) { inset:12% 48%; border:0; width:8px; height:8px; background:#fff; transform:none; }
+[data-wpnc-tool] .wpnc-tarot__orbit i:nth-child(3) { inset:67% 72%; border:0; width:12px; height:12px; background:var(--wpnc-gold-bright); transform:none; }
+
+[data-wpnc-tool] .wpnc-tarot-hub__body,
+[data-wpnc-tool] .wpnc-tarot__workspace { padding:clamp(1.25rem,5vw,3.5rem); }
+[data-wpnc-tool] .wpnc-tarot-hub__intro { display:grid; grid-template-columns:minmax(140px,.45fr) 1fr; gap:1.5rem; align-items:start; padding-bottom:2rem; border-bottom:1px solid var(--wpnc-line); }
+[data-wpnc-tool] .wpnc-tarot-hub__intro > p:last-child { max-width:680px; color:var(--wpnc-muted); font-size:1.05rem; line-height:1.7; }
+[data-wpnc-tool] .wpnc-tarot__step-label { color:var(--wpnc-accent-strong); font-size:.74rem !important; font-weight:800; letter-spacing:.14em; line-height:1.2 !important; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot-hub__choices { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:2rem 0; }
+[data-wpnc-tool] .wpnc-tarot-hub__choice { display:grid; grid-template-columns:3rem 1fr auto; gap:1rem; align-items:center; min-height:116px; padding:1.15rem; color:var(--wpnc-ink); text-decoration:none; border:1px solid var(--wpnc-line); border-radius:1.1rem; background:#fff; box-shadow:0 .55rem 1.4rem rgba(26,16,48,.04); transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+[data-wpnc-tool] .wpnc-tarot-hub__choice:hover { transform:translateY(-3px); border-color:var(--wpnc-gold); box-shadow:0 .9rem 2rem rgba(26,16,48,.1); }
+[data-wpnc-tool] .wpnc-tarot-hub__choice:focus-visible { outline:3px solid var(--wpnc-gold); outline-offset:3px; }
+[data-wpnc-tool] .wpnc-tarot-hub__glyph { display:grid; place-items:center; width:3rem; aspect-ratio:1; color:var(--wpnc-gold-deep,#b5791c); border-radius:50%; background:var(--wpnc-soft); font-size:1.45rem; }
+[data-wpnc-tool] .wpnc-tarot-hub__choice strong { display:block; margin-bottom:.25rem; font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.45rem; font-weight:400; }
+[data-wpnc-tool] .wpnc-tarot-hub__choice small { display:block; color:var(--wpnc-muted); font-size:.88rem; line-height:1.5; }
+[data-wpnc-tool] .wpnc-tarot-hub__arrow { color:var(--wpnc-accent); font-size:1.35rem; }
+[data-wpnc-tool] .wpnc-tarot__privacy { display:flex; gap:.9rem; align-items:flex-start; padding:1.15rem; color:var(--wpnc-muted); border-radius:1rem; background:var(--wpnc-privacy-surface,#f3eadc); font-size:.87rem; line-height:1.55; }
+[data-wpnc-tool] .wpnc-tarot__privacy > span { color:var(--wpnc-accent); font-size:1.25rem; }
+[data-wpnc-tool] .wpnc-tarot__privacy strong { color:var(--wpnc-ink); }
+
+[data-wpnc-tool] .wpnc-tarot__progress { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.35rem; margin:0 0 clamp(2rem,5vw,3.5rem); padding:0; list-style:none; color:var(--wpnc-muted); font-size:.7rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot__progress li { position:relative; display:flex; gap:.45rem; align-items:center; margin:0; white-space:nowrap; }
+[data-wpnc-tool] .wpnc-tarot__progress li::after { content:""; height:1px; flex:1; background:var(--wpnc-line); }
+[data-wpnc-tool] .wpnc-tarot__progress li:last-child::after { display:none; }
+[data-wpnc-tool] .wpnc-tarot__progress span { display:grid; place-items:center; width:1.6rem; aspect-ratio:1; flex:none; color:var(--wpnc-muted); border:1px solid var(--wpnc-line); border-radius:50%; background:#fff; font-size:.65rem; }
+[data-wpnc-tool] .wpnc-tarot__progress [aria-current="step"] { color:var(--wpnc-ink); }
+[data-wpnc-tool] .wpnc-tarot__progress [aria-current="step"] span { color:var(--wpnc-night); border-color:var(--wpnc-gold); background:var(--wpnc-gold-bright); }
+[data-wpnc-tool] .wpnc-tarot__progress .is-complete span { color:#fff; border-color:var(--wpnc-accent); background:var(--wpnc-accent); }
+[data-wpnc-tool] .wpnc-tarot__focus { max-width:680px; margin:0 auto; }
+[data-wpnc-tool] .wpnc-tarot__focus label { margin:.75rem 0 .55rem; color:var(--wpnc-ink); font-family:var(--fpq-font-serif,Georgia,serif); font-size:clamp(1.75rem,4vw,2.55rem); font-weight:400; line-height:1.12; }
+[data-wpnc-tool] .wpnc-tarot__focus textarea { min-height:120px; padding:1rem; border:1px solid var(--wpnc-line); border-radius:1rem; background:#fff; box-shadow:inset 0 1px 0 rgba(26,16,48,.03); }
+[data-wpnc-tool] .wpnc-tarot__microcopy { margin-top:.5rem !important; color:var(--wpnc-muted); font-size:.78rem !important; }
+[data-wpnc-tool] .wpnc-tarot__daily-note { display:flex; gap:1rem; align-items:center; margin:.75rem 0 1.25rem; padding:1.25rem; color:var(--wpnc-ink); border:1px solid var(--wpnc-line); border-radius:1rem; background:#fff; font-size:1rem; line-height:1.6; }
+[data-wpnc-tool] .wpnc-tarot__daily-note > span { color:var(--wpnc-gold-deep,#b5791c); font-size:2rem; }
+[data-wpnc-tool] .wpnc-tarot__primary,
+[data-wpnc-tool] a.wpnc-tarot__primary { display:inline-flex; gap:.7rem; justify-content:center; align-items:center; min-height:50px; margin:1.25rem .5rem 0 0; padding:.85rem 1.25rem; color:#fff; border:1px solid var(--wpnc-night); border-radius:999px; background:var(--wpnc-night); box-shadow:0 .55rem 1rem rgba(26,16,48,.14); font:750 .94rem/1.2 var(--fpq-font-sans,system-ui,sans-serif); text-decoration:none; }
+[data-wpnc-tool] .wpnc-tarot__primary:hover,
+[data-wpnc-tool] a.wpnc-tarot__primary:hover { color:var(--wpnc-night); border-color:var(--wpnc-gold); background:var(--wpnc-gold-bright); }
+[data-wpnc-tool] .wpnc-tarot__secondary,
+[data-wpnc-tool] a.wpnc-tarot__secondary { display:inline-flex; justify-content:center; align-items:center; min-height:46px; margin:1rem .4rem 0 0; padding:.72rem 1rem; color:var(--wpnc-accent-strong); border:1px solid var(--wpnc-line); border-radius:999px; background:#fff; box-shadow:none; font:700 .88rem/1.2 var(--fpq-font-sans,system-ui,sans-serif); text-decoration:none; }
+[data-wpnc-tool] .wpnc-tarot__secondary:hover,
+[data-wpnc-tool] a.wpnc-tarot__secondary:hover { color:var(--wpnc-night); border-color:var(--wpnc-gold); background:#fff9ee; }
+[data-wpnc-tool] .wpnc-tarot__error { margin-top:.75rem !important; color:#8b3a2c !important; font-size:.88rem !important; font-weight:650; }
+[data-wpnc-tool] .wpnc-tarot__draw-head { display:flex; gap:1rem; justify-content:space-between; align-items:end; margin-bottom:1.5rem; }
+[data-wpnc-tool] .wpnc-tarot__draw-head h3,
+[data-wpnc-tool] .wpnc-tarot__teaser h3,
+[data-wpnc-tool] .wpnc-tarot__reveal h3,
+[data-wpnc-tool] .wpnc-tarot__full-head h3 { margin:.35rem 0 0; font-family:var(--fpq-font-serif,Georgia,serif); font-size:clamp(1.85rem,5vw,3.25rem); font-weight:400; line-height:1.08; }
+[data-wpnc-tool] .wpnc-tarot__draw-head > p { flex:none; color:var(--wpnc-muted); font-size:.82rem; font-weight:700; }
+[data-wpnc-tool] .wpnc-tarot__fan { display:grid; grid-template-columns:repeat(5,minmax(86px,148px)); gap:clamp(.55rem,1.5vw,1rem); justify-content:center; }
+[data-wpnc-tool] button.wpnc-tarot-card,
+[data-wpnc-tool] .wpnc-tarot-card { position:relative; display:block; min-width:0; min-height:0; aspect-ratio:2/3; margin:0; padding:.42rem; overflow:hidden; color:var(--wpnc-gold-bright); border:1px solid rgba(243,200,109,.62); border-radius:.8rem; background:linear-gradient(145deg,#36205e,var(--wpnc-night)); box-shadow:0 .65rem 1.25rem rgba(26,16,48,.16); }
+[data-wpnc-tool] button.wpnc-tarot-card { cursor:pointer; transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease; }
+[data-wpnc-tool] button.wpnc-tarot-card:hover { transform:translateY(-5px) rotate(-1deg); background:linear-gradient(145deg,#442877,var(--wpnc-night)); box-shadow:0 1rem 1.75rem rgba(26,16,48,.24); }
+[data-wpnc-tool] button.wpnc-tarot-card:focus-visible { outline:3px solid var(--wpnc-gold); outline-offset:3px; }
+[data-wpnc-tool] .wpnc-tarot-card__back { position:absolute; inset:.42rem; display:grid; place-items:center; border:1px solid rgba(243,200,109,.55); border-radius:.52rem; background:radial-gradient(circle at 50% 46%,rgba(224,168,60,.24),transparent 27%), url('./tarot-card-back.webp') center/cover no-repeat; }
+[data-wpnc-tool] .wpnc-tarot-card__back::before,
+[data-wpnc-tool] .wpnc-tarot-card__back::after { content:""; position:absolute; width:52%; aspect-ratio:1; border:1px solid rgba(243,200,109,.38); transform:rotate(45deg); }
+[data-wpnc-tool] .wpnc-tarot-card__back::after { width:32%; border-radius:50%; transform:none; }
+[data-wpnc-tool] .wpnc-tarot-card__back i { font-style:normal; font-size:1.25rem; }
+[data-wpnc-tool] .wpnc-tarot-card__back b { position:absolute; bottom:.4rem; font-size:.65rem; font-weight:600; }
+[data-wpnc-tool] .wpnc-tarot-card__peek { display:grid; place-items:center; height:100%; min-height:0; color:var(--wpnc-night); border-radius:.5rem; background:var(--wpnc-gold-bright); font-size:2.2rem; animation:wpnc-card-turn .42s ease both; }
+[data-wpnc-tool] button.wpnc-tarot-card.is-chosen { border-color:var(--wpnc-gold); opacity:.58; transform:translateY(-4px); }
+[data-wpnc-tool] .wpnc-tarot__fan.is-shuffling .wpnc-tarot-card { animation:wpnc-shuffle .55s ease both; }
+[data-wpnc-tool] .wpnc-tarot__fan.is-shuffling .wpnc-tarot-card:nth-child(3n) { animation-delay:.06s; }
+[data-wpnc-tool] .wpnc-tarot__fan.is-shuffling .wpnc-tarot-card:nth-child(3n+1) { animation-delay:.12s; }
+[data-wpnc-tool] .wpnc-tarot__picked-row { display:flex; gap:1rem; justify-content:space-between; align-items:center; min-height:54px; margin-top:1rem; }
+[data-wpnc-tool] .wpnc-tarot__picked { display:flex; flex-wrap:wrap; gap:.45rem; }
+[data-wpnc-tool] .wpnc-tarot__picked span { padding:.4rem .65rem; color:var(--wpnc-accent-strong); border-radius:999px; background:#eee3f8; font-size:.74rem; font-weight:750; }
+[data-wpnc-tool] button.wpnc-tarot__undo { flex:none; min-height:42px; margin:0; padding:.55rem .75rem; color:var(--wpnc-accent-strong); border:0; border-radius:.5rem; background:transparent; box-shadow:none; font-size:.8rem; text-decoration:underline; text-underline-offset:.2rem; }
+[data-wpnc-tool] button.wpnc-tarot__undo:hover { color:var(--wpnc-night); background:#f1e8dc; }
+[data-wpnc-tool] button.wpnc-tarot__undo:disabled { cursor:not-allowed; opacity:.42; }
+[data-wpnc-tool] .wpnc-tarot__reveal { text-align:center; }
+[data-wpnc-tool] .wpnc-tarot__reveal-row { display:flex; gap:clamp(.7rem,3vw,1.5rem); justify-content:center; margin:2rem auto 1rem; }
+[data-wpnc-tool] .wpnc-tarot__reveal-row .wpnc-tarot-card { width:clamp(96px,18vw,150px); min-height:clamp(145px,27vw,220px); }
+[data-wpnc-tool] .wpnc-tarot__reveal-row .wpnc-tarot-card small { position:absolute; right:0; bottom:-1.5rem; left:0; color:var(--wpnc-muted); font-size:.72rem; }
+[data-wpnc-tool] [data-tarot-stage="reveal"].is-revealing .wpnc-tarot-card { animation:wpnc-reveal .52s ease both; }
+[data-wpnc-tool] [data-tarot-stage="reveal"].is-revealing .wpnc-tarot-card:nth-child(2) { animation-delay:.08s; }
+[data-wpnc-tool] [data-tarot-stage="reveal"].is-revealing .wpnc-tarot-card:nth-child(3) { animation-delay:.16s; }
+
+[data-wpnc-tool] .wpnc-tarot__teaser { max-width:900px; margin:auto; text-align:center; }
+[data-wpnc-tool] .wpnc-tarot__spread { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:2rem 0; text-align:left; }
+[data-wpnc-tool] .wpnc-tarot__spread > :only-child { grid-column:2; }
+[data-wpnc-tool] .wpnc-tarot-card-face { display:grid; grid-template-columns:minmax(88px,.8fr) 1.5fr; gap:1rem; min-height:180px; padding:1rem; color:var(--wpnc-ink); border:1px solid var(--wpnc-line); border-radius:1rem; background:var(--wpnc-card-surface,#fff); box-shadow:0 .7rem 1.6rem rgba(26,16,48,.07); }
+[data-wpnc-tool] .wpnc-tarot-card-face__art { position:relative; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:145px; overflow:hidden; color:var(--wpnc-gold-bright); border-radius:.7rem; background:radial-gradient(circle at 50% 42%,#503078,var(--wpnc-night) 62%); }
+[data-wpnc-tool] .wpnc-tarot-card-face__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.9; }
+[data-wpnc-tool] .wpnc-tarot-card-face__image + span { position:relative; z-index:1; text-shadow:0 1px 3px #1a1030; }
+[data-wpnc-tool] .wpnc-tarot-card-face__art::before { content:""; position:absolute; width:68%; aspect-ratio:1; border:1px solid rgba(243,200,109,.4); transform:rotate(45deg); }
+[data-wpnc-tool] .wpnc-tarot-card-face__art > span { position:relative; font-size:2rem; }
+[data-wpnc-tool] .wpnc-tarot-card-face__art small { position:absolute; right:.2rem; bottom:.55rem; left:.2rem; text-align:center; font-size:.6rem; letter-spacing:.08em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot-card-face.is-reversed .wpnc-tarot-card-face__art > span { transform:rotate(180deg); }
+[data-wpnc-tool] .wpnc-tarot-card-face__copy { align-self:center; }
+[data-wpnc-tool] .wpnc-tarot-card-face__copy > p:first-child { color:var(--wpnc-accent-strong); font-size:.68rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot-card-face h3 { margin:.35rem 0 .55rem; font-family:var(--fpq-font-serif,Georgia,serif); font-size:clamp(1.25rem,3vw,1.7rem); font-weight:400; line-height:1.05; }
+[data-wpnc-tool] .wpnc-tarot-card-face__orientation { display:inline-flex; padding:.28rem .5rem; color:var(--wpnc-muted); border-radius:999px; background:var(--wpnc-soft); font-size:.68rem; font-weight:750; }
+[data-wpnc-tool] .wpnc-tarot-card-face__meaning { margin-top:.8rem !important; color:var(--wpnc-muted) !important; font-size:.87rem !important; line-height:1.58 !important; }
+[data-wpnc-tool] .wpnc-tarot__bridge { max-width:590px; margin:0 auto !important; color:var(--wpnc-muted) !important; font-size:.95rem !important; line-height:1.65 !important; }
+
+[data-wpnc-tool] .wpnc-tarot__full { max-width:900px; margin:auto; }
+[data-wpnc-tool] .wpnc-tarot__full-head { max-width:670px; }
+[data-wpnc-tool] .wpnc-tarot__full-head > p:last-child { margin-top:.7rem !important; color:var(--wpnc-muted); line-height:1.65; }
+[data-wpnc-tool] .wpnc-tarot__full blockquote { margin:1.5rem 0; padding:1rem 1.2rem; color:var(--wpnc-ink); border:0; border-left:3px solid var(--wpnc-gold); background:#fff; font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.3rem; }
+[data-wpnc-tool] .wpnc-tarot__full blockquote span { display:block; margin-bottom:.35rem; color:var(--wpnc-muted); font:750 .68rem/1.2 var(--fpq-font-sans,system-ui,sans-serif); letter-spacing:.1em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot__lean { display:grid; grid-template-columns:auto 1fr; gap:.25rem 1rem; align-items:center; margin:1.5rem 0; padding:1rem 1.2rem; color:#fff; border-radius:1rem; background:var(--wpnc-night); }
+[data-wpnc-tool] .wpnc-tarot__lean > span { grid-row:1 / 3; color:var(--wpnc-gold-bright); font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot__lean strong { font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.65rem; font-weight:400; }
+[data-wpnc-tool] .wpnc-tarot__lean p { color:#dcd2e9; font-size:.82rem; }
+[data-wpnc-tool] .wpnc-tarot__spread--overview { margin-bottom:1rem; }
+[data-wpnc-tool] .wpnc-tarot__overview { display:grid; grid-template-columns:1.25fr 1fr 1fr; border:1px solid var(--wpnc-line); border-radius:1rem; background:#fff; }
+[data-wpnc-tool] .wpnc-tarot__overview > div { padding:1.15rem; }
+[data-wpnc-tool] .wpnc-tarot__overview > div + div { border-left:1px solid var(--wpnc-line); }
+[data-wpnc-tool] .wpnc-tarot__overview span,
+[data-wpnc-tool] .wpnc-tarot__prompt span { color:var(--wpnc-accent-strong); font-size:.68rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot__overview p,
+[data-wpnc-tool] .wpnc-tarot__overview li { margin-top:.5rem; color:var(--wpnc-muted); font-size:.84rem; line-height:1.55; }
+[data-wpnc-tool] .wpnc-tarot__overview ul { margin:0; padding-left:1.1rem; }
+[data-wpnc-tool] .wpnc-tarot__details { margin-top:2rem; }
+[data-wpnc-tool] .wpnc-tarot__details > h3 { margin:0 0 .8rem; font-family:var(--fpq-font-serif,Georgia,serif); font-size:2rem; font-weight:400; }
+[data-wpnc-tool] .wpnc-tarot__card-detail { margin:.65rem 0; overflow:hidden; border:1px solid var(--wpnc-line); border-radius:1rem; background:#fff; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary { display:grid; grid-template-columns:120px 1fr auto; gap:1rem; align-items:center; padding:1rem 1.15rem; cursor:pointer; list-style:none; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary::-webkit-details-marker { display:none; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary::after { content:"+"; grid-column:4; color:var(--wpnc-accent); font-size:1.25rem; }
+[data-wpnc-tool] .wpnc-tarot__card-detail[open] summary::after { content:"−"; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary span { color:var(--wpnc-accent-strong); font-size:.68rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary strong { font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.25rem; font-weight:400; }
+[data-wpnc-tool] .wpnc-tarot__card-detail summary small { color:var(--wpnc-muted); }
+[data-wpnc-tool] .wpnc-tarot__card-detail > div { display:grid; grid-template-columns:1.5fr 1fr; gap:1rem; padding:0 1rem 1rem; }
+[data-wpnc-tool] .wpnc-tarot__card-detail .wpnc-tarot-card-face { box-shadow:none; }
+[data-wpnc-tool] .wpnc-tarot__prompt { align-self:stretch; padding:1rem; border-radius:.8rem; background:var(--wpnc-soft); }
+[data-wpnc-tool] .wpnc-tarot__prompt p { margin-top:.55rem !important; color:var(--wpnc-ink); font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.15rem !important; line-height:1.45 !important; }
+[data-wpnc-tool] .wpnc-tarot__synthesis { display:flex; gap:1rem; align-items:flex-start; margin-top:2rem; padding:1.35rem; color:#fff; border-radius:1rem; background:linear-gradient(135deg,var(--wpnc-night),var(--wpnc-night-2)); }
+[data-wpnc-tool] .wpnc-tarot__synthesis > span { color:var(--wpnc-gold-bright); font-size:1.6rem; }
+[data-wpnc-tool] .wpnc-tarot__synthesis h3 { margin:0 0 .35rem; color:#fff; font-family:var(--fpq-font-serif,Georgia,serif); font-size:1.55rem; font-weight:400; }
+[data-wpnc-tool] .wpnc-tarot__synthesis p { color:#dfd6eb; font-size:.88rem; line-height:1.6; }
+[data-wpnc-tool] .wpnc-tarot__synthesis .wpnc-tarot__primary { color:var(--wpnc-night); border-color:var(--wpnc-gold); background:var(--wpnc-gold-bright); box-shadow:none; }
+[data-wpnc-tool] .wpnc-tarot__synthesis .wpnc-tarot__primary:hover { color:#fff; background:var(--wpnc-accent); }
+[data-wpnc-tool] .wpnc-tarot__result-actions { display:flex; flex-wrap:wrap; align-items:center; margin-top:.4rem; }
+[data-wpnc-tool] .wpnc-tarot__result-actions [data-copy-status] { flex-basis:100%; margin-top:.55rem !important; color:var(--wpnc-muted); font-size:.76rem; }
+[data-wpnc-tool].wpnc-tool--tarot_hub .wpnc-tool__disclaimer,
+[data-wpnc-tool].wpnc-tool--tarot_reading .wpnc-tool__disclaimer { margin-top:2rem; color:var(--wpnc-muted); font-size:.75rem; line-height:1.55; }
+
+@keyframes wpnc-shuffle { 0% { opacity:.5; transform:translateX(0) rotate(0); } 45% { opacity:1; transform:translateX(var(--wpnc-shuffle-x,8px)) rotate(4deg); } 100% { opacity:1; transform:translateX(0) rotate(0); } }
+@keyframes wpnc-card-turn { from { opacity:.3; transform:rotateY(90deg); } to { opacity:1; transform:rotateY(0); } }
+@keyframes wpnc-reveal { 0% { transform:translateY(0) rotateY(0); } 60% { transform:translateY(-12px) rotateY(90deg); } 100% { transform:translateY(0) rotateY(180deg); } }
+
+/* fpq-theme only defines the desktop dropdown's hidden state inside its
+   min-width media query. Keep those desktop-only submenus out of the mobile
+   pills row; the separate hamburger drawer remains available and unchanged. */
+@media (max-width:899px) {
+  .fpq-header--desktop-dropdowns .fpq-nav-item__dropdown { display:none !important; }
+}
+
+@media (max-width:760px) {
+  [data-wpnc-tool].wpnc-tool--tarot_hub,
+  [data-wpnc-tool].wpnc-tool--tarot_reading { width:calc(100vw - 16px); border-radius:1rem; }
+  [data-wpnc-tool] .wpnc-tarot__hero { min-height:300px; padding:2rem 1.25rem 2.5rem; }
+  [data-wpnc-tool] .wpnc-tarot__hero--compact { min-height:240px; }
+  [data-wpnc-tool] .wpnc-tarot__orbit { right:-8rem; bottom:-7rem; width:360px; }
+  [data-wpnc-tool] .wpnc-tarot-hub__intro { grid-template-columns:1fr; gap:.65rem; }
+  [data-wpnc-tool] .wpnc-tarot-hub__choices { grid-template-columns:1fr; }
+  [data-wpnc-tool] .wpnc-tarot__progress { overflow-x:auto; padding-bottom:.35rem; }
+  [data-wpnc-tool] .wpnc-tarot__progress li { font-size:0; }
+  [data-wpnc-tool] .wpnc-tarot__progress li::after { min-width:.75rem; }
+  [data-wpnc-tool] .wpnc-tarot__progress span { font-size:.65rem; }
+  [data-wpnc-tool] .wpnc-tarot__fan { grid-template-columns:repeat(3,minmax(86px,1fr)); }
+  [data-wpnc-tool] button.wpnc-tarot-card { min-height:0; }
+  [data-wpnc-tool] .wpnc-tarot__spread { grid-template-columns:1fr; }
+  [data-wpnc-tool] .wpnc-tarot__spread > :only-child { grid-column:auto; }
+  [data-wpnc-tool] .wpnc-tarot__overview { grid-template-columns:1fr; }
+  [data-wpnc-tool] .wpnc-tarot__overview > div + div { border-top:1px solid var(--wpnc-line); border-left:0; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail summary { grid-template-columns:1fr auto; gap:.25rem .75rem; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail summary span { grid-column:1; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail summary strong { grid-column:1; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail summary small { grid-column:2; grid-row:1 / 3; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail summary::after { grid-column:3; grid-row:1 / 3; }
+  [data-wpnc-tool] .wpnc-tarot__card-detail > div { grid-template-columns:1fr; }
+}
+
+@media (max-width:390px) {
+  [data-wpnc-tool] .wpnc-tarot__workspace,
+  [data-wpnc-tool] .wpnc-tarot-hub__body { padding:1rem; }
+  [data-wpnc-tool] .wpnc-tarot-hub__choice { grid-template-columns:2.65rem 1fr auto; padding:.9rem; }
+  [data-wpnc-tool] .wpnc-tarot__fan { gap:.45rem; }
+  [data-wpnc-tool] button.wpnc-tarot-card { min-height:0; padding:.3rem; }
+  [data-wpnc-tool] .wpnc-tarot-card__back { inset:.3rem; }
+  [data-wpnc-tool] .wpnc-tarot__draw-head { align-items:start; }
+  [data-wpnc-tool] .wpnc-tarot__picked-row { align-items:flex-end; }
+  [data-wpnc-tool] .wpnc-tarot-card-face { grid-template-columns:82px 1fr; padding:.75rem; }
+  [data-wpnc-tool] .wpnc-tarot-card-face__art { min-height:125px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  [data-wpnc-tool] .wpnc-tarot__fan.is-shuffling .wpnc-tarot-card,
+  [data-wpnc-tool] .wpnc-tarot-card__peek,
+  [data-wpnc-tool] [data-tarot-stage="reveal"].is-revealing .wpnc-tarot-card { animation:none !important; }
+}

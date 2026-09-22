@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-suit="swords" data-court="Queen">
+<title id="title">Queen of Swords</title><desc id="desc">Original queen figure carrying the swords emblem for Queen of Swords.</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<g data-figure="queen"><path d="M105 220 H255 V445 H105 Z M85 445 H275"/><circle cx="180" cy="165" r="14"/><path d="M154 235 Q180 197 206 235"/><path d="M145 350 H215"/></g><g data-emblem="queen"><path d="M150 142 L158 102 L180 128 L202 102 L210 142"/></g><g data-suit-object="1" transform="translate(285 285) rotate(-13)"><path d="M0 -32 L7 16 L0 28 L-7 16 Z M-15 16 H15"/></g></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">QUEEN OF SWORDS</text><text x="200" y="555" font-size="15">SWORDS-13</text></g>
+</svg>

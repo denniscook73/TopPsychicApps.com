@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="moon-path">
+<title id="title">The Moon</title><desc id="desc">a moonlit path between two towers, a dog, wolf, and pool</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M105 410 V220 H155 V410 M245 410 V220 H295 V410 M125 220 L130 185 L150 220 M265 220 L270 185 L290 220 M200 90 A65 65 0 1 0 265 155 A50 50 0 1 1 200 90 M175 500 Q200 420 225 500"/><circle cx="120" cy="450" r="24"/><circle cx="280" cy="450" r="24"/><path d="M185 475 Q200 450 215 475"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE MOON</text><text x="200" y="555" font-size="15">MAJOR-18</text></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="devil-chains">
+<title id="title">The Devil</title><desc id="desc">a horned figure above two people with loose chains</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="130" r="17"/><path d="M168 215 Q200 162 232 215"/><path d="M165 105 L135 65 M235 105 L265 65 M155 230 Q95 205 70 270 M245 230 Q305 205 330 270"/><circle cx="135" cy="360" r="9"/><path d="M118 405 Q135 392 152 405"/><circle cx="265" cy="360" r="9"/><path d="M248 405 Q265 392 282 405"/><path d="M150 380 Q200 430 250 380 M95 430 Q135 405 175 430 M225 430 Q265 405 305 430"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE DEVIL</text><text x="200" y="555" font-size="15">MAJOR-15</text></g>
+</svg>

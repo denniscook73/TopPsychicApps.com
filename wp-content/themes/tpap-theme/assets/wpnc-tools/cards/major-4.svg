@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="emperor-throne">
+<title id="title">The Emperor</title><desc id="desc">an emperor on a square throne before angular mountains</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M105 170 H295 V440 H105 Z M105 210 L65 185 V420 L105 395 M295 210 L335 185 V420 L295 395"/><circle cx="200" cy="165" r="17"/><path d="M168 250 Q200 197 232 250"/><path d="M155 365 H245 M165 385 H235"/><path d="M172 132 l12-32 16 24 16-24 12 32 M55 480 L120 405 M345 480 L280 405"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE EMPEROR</text><text x="200" y="555" font-size="15">MAJOR-4</text></g>
+</svg>
