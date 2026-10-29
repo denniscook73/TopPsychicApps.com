@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="fool-cliff">
+<title id="title">The Fool</title><desc id="desc">a traveller at a cliff with a staff, bundle, sun, and small dog</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="310" cy="120" r="26"/><path d="M55 430 L235 430 L275 500 M215 430 L255 385"/><circle cx="185" cy="205" r="14"/><path d="M158 277 Q185 237 212 277"/><path d="M160 270 L140 360 M205 270 L235 350 M150 285 L115 255 M212 285 L250 250"/><path d="M118 255 L98 205 M98 205 Q72 215 86 245 M248 250 L265 220 L280 250"/><circle cx="245" cy="405" r="13"/><path d="M232 416 L214 430 M255 416 L270 430"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE FOOL</text><text x="200" y="555" font-size="15">MAJOR-0</text></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="hanged-tree">
+<title id="title">The Hanged Man</title><desc id="desc">a haloed figure suspended peacefully from a living tree</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M75 135 H325 M100 135 L72 470 M300 135 L328 470"/><circle cx="200" cy="370" r="24"/><circle cx="200" cy="370" r="45" stroke-width="2"/><path d="M200 346 V220 M200 245 L150 300 M200 245 L250 300 M200 220 L245 165 M200 220 L165 180"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE HANGED MAN</text><text x="200" y="555" font-size="15">MAJOR-12</text></g>
+</svg>

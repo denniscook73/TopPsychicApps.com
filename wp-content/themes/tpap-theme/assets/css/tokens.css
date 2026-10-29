@@ -1,0 +1,130 @@
+/* =============================================================
+   DESIGN TOKENS — "Midnight Observatory"
+   A dark, luminous editorial system for an independent psychic-app
+   review authority. Deep indigo-black canvas, restrained gold for
+   rating/value, cool violet for navigation/interaction, ambient
+   aurora + grain for atmosphere without noise.
+
+   NOTE: this file also defines the legacy `--clr-*` / `--fw-black`
+   / `--fw-regular` / `--fw-semibold` custom properties consumed by
+   catalog.css and by inline <style> blocks baked into page-review.php
+   / inc/reviews.php / inc/template-tags.php (files this pass is not
+   allowed to touch). Renaming or dropping any `--clr-*` token here
+   will visibly break those pages — treat this block as a public API.
+   ============================================================= */
+
+/* Extra display face — DM Serif Display stays loaded (functions.php
+   link tag is untouched) but is not used; Fraunces is a much more
+   distinctive, optically-sized serif that scales convincingly from
+   a 12px eyebrow to a 96px hero numeral, with a real italic for the
+   single accent word in the hero headline. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap');
+
+:root {
+    /* ---------- Canvas & surfaces ---------- */
+    --c-bg: #0A0A16;              /* base canvas — near-black indigo */
+    --c-bg-deep: #05050C;          /* footer / deepest layer */
+    --c-surface: #13142A;          /* card / raised panel level 1 */
+    --c-surface-alt: #1B1C36;      /* elevated level 2 — header, sidebar boxes, table stripes */
+    --c-surface-hover: #1A1B3A;    /* hover wash on surface-level elements */
+    --c-border: #262840;           /* hairline on dark surfaces */
+    --c-border-dark: #3A3C68;      /* stronger border / hover border */
+
+    /* ---------- Text ---------- */
+    --c-text: #F1F0FA;             /* body copy, headings */
+    --c-text-light: #ACA9C9;       /* muted / secondary copy — AA on bg + surface */
+    --c-text-dim: #8D8AB0;         /* least-emphasis meta (dates, counts) — still AA on bg */
+    --c-text-inv: #FFFFFF;         /* text on solid colour fills */
+    --c-ink: #1A1408;               /* near-black label for text set on gold */
+
+    /* ---------- Primary — cool violet (nav, links, focus, structure) ---------- */
+    --c-primary: #8C85FF;          /* foreground: links, eyebrows, icons, borders */
+    --c-primary-light: #BDB8FF;     /* brighter foreground for hover states */
+    --c-primary-dark: #4B44D9;      /* solid fill: buttons, badges, table headers */
+    --c-primary-hover: #5F57F0;     /* solid-fill hover (buttons/badges) */
+    --c-primary-tint: rgba(140,133,255,.14);   /* low-alpha wash for chips/active rows */
+    --c-primary-tint-strong: rgba(140,133,255,.24);
+
+    /* ---------- Accent — gold (rating & value only) ---------- */
+    --c-accent: #E8B54C;
+    --c-accent-light: #F5CB72;     /* hover on gold buttons */
+    --c-accent-tint: rgba(232,181,76,.14);
+    --c-star: #E8B54C;             /* star fill — same family as accent, deliberately */
+
+    /* ---------- Cool secondary — teal (scorebars / chart fills) ---------- */
+    --c-teal: #45D6C0;
+    --c-teal-tint: rgba(69,214,192,.16);
+
+    /* ---------- Status ---------- */
+    --c-green: #34D399;            /* available / positive */
+    --c-red: #F2807A;              /* unavailable / negative */
+
+    /* ---------- Aurora (ambient hero/CTA glow — see components.css) ---------- */
+    --c-aurora-violet: rgba(124,110,255,.32);
+    --c-aurora-gold: rgba(232,181,76,.16);
+    --c-aurora-teal: rgba(69,214,192,.12);
+
+    /* ---------- Footer ---------- */
+    --c-footer-bg: #06060E;
+    --c-footer-text: #9C99BE;
+
+    /* ---------- Legacy alias layer (`--clr-*`) — consumed by catalog.css
+       and by page-review.php / inc/reviews.php / inc/template-tags.php
+       inline styles. Values intentionally mirror the tokens above;
+       edit the source token, not these. ---------- */
+    --clr-bg: var(--c-bg);
+    --clr-surface: var(--c-surface);
+    --clr-surface-hover: var(--c-surface-hover);
+    --clr-border: var(--c-border);
+    --clr-text: var(--c-text);
+    --clr-muted: var(--c-text-light);
+    --clr-dim: var(--c-text-dim);
+    --clr-accent: var(--c-accent);
+    --clr-gold: var(--c-accent);
+    --clr-green: var(--c-green);
+    --clr-red: var(--c-red);
+    /* clr-primary is consumed ONLY as a solid background fill (icon
+       chips, gradient stops) in markup we cannot edit — it must stay
+       the deep, white-text-safe tone, not the bright foreground one. */
+    --clr-primary: var(--c-primary-dark);
+    --clr-primary-ink: var(--c-primary);
+    --clr-primary-tint: var(--c-primary-tint);
+
+    /* ---------- Type ---------- */
+    --ff-heading: 'Fraunces', 'DM Serif Display', Georgia, serif;
+    --ff-body: 'DM Sans', system-ui, sans-serif;
+    --fw-normal: 400; --fw-medium: 500; --fw-semi: 600; --fw-bold: 700;
+    --fw-regular: var(--fw-normal);
+    --fw-semibold: var(--fw-semi);
+    --fw-black: 800;
+
+    --fs-xs:.75rem;--fs-sm:.875rem;--fs-base:1rem;--fs-md:1.125rem;
+    --fs-lg:1.25rem;--fs-xl:1.5rem;--fs-2xl:1.875rem;--fs-3xl:2.25rem;
+    --fs-4xl:3rem;--fs-5xl:4rem;--fs-6xl:5.25rem;
+    --lh-tight:1.15;--lh-normal:1.6;--lh-relaxed:1.8;
+    --ls-tight:-.02em;--ls-tighter:-.035em;
+
+    /* ---------- Rhythm ---------- */
+    --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;
+    --sp-8:32px;--sp-10:40px;--sp-12:48px;--sp-16:64px;--sp-20:80px;--sp-24:96px;
+    --max-w:1200px;--max-w-narrow:800px;--max-w-prose:70ch;--gutter:24px;
+    --r-sm:4px;--r-md:8px;--r-lg:12px;--r-xl:16px;--r-2xl:22px;--r-full:9999px;
+
+    /* ---------- Elevation — dark-surface shadows (soft black depth +
+       a hairline top highlight standing in for a light catch) ---------- */
+    --shadow-xs:0 1px 0 rgba(255,255,255,.03) inset,0 2px 10px rgba(0,0,0,.4);
+    --shadow-sm:0 1px 0 rgba(255,255,255,.04) inset,0 6px 18px rgba(0,0,0,.45);
+    --shadow-md:0 1px 0 rgba(255,255,255,.05) inset,0 14px 30px rgba(0,0,0,.5);
+    --shadow-lg:0 1px 0 rgba(255,255,255,.06) inset,0 22px 48px rgba(0,0,0,.55);
+    --shadow-xl:0 1px 0 rgba(255,255,255,.07) inset,0 32px 64px rgba(0,0,0,.6);
+    --glow-gold:0 0 0 1px rgba(232,181,76,.45),0 10px 32px rgba(232,181,76,.22);
+    --glow-primary:0 0 0 1px rgba(140,133,255,.35),0 10px 28px rgba(140,133,255,.2);
+
+    /* ---------- Motion ---------- */
+    --ease:cubic-bezier(.4,0,.2,1);--ease-out:cubic-bezier(.16,1,.3,1);
+    --dur-fast:120ms;--dur:200ms;--dur-slow:350ms;--dur-slower:600ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root{ --dur-fast:1ms;--dur:1ms;--dur-slow:1ms;--dur-slower:1ms; }
+}

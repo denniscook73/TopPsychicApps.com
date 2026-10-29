@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="death-banner">
+<title id="title">Death</title><desc id="desc">a rider carrying a white banner toward a rising sun</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M85 385 Q145 315 240 360 Q300 385 330 450 M120 400 V475 M260 400 V475"/><circle cx="185" cy="210" r="10"/><path d="M165 264 Q185 242 205 264"/><path d="M205 270 L245 335"/><path d="M245 335 V135 M245 145 H325 L285 205 L245 185 M65 470 Q200 410 335 470 M300 430 A70 70 0 0 1 350 370"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">DEATH</text><text x="200" y="555" font-size="15">MAJOR-13</text></g>
+</svg>

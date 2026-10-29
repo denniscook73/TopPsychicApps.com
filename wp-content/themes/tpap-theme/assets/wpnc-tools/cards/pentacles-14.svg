@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-suit="pentacles" data-court="King">
+<title id="title">King of Pentacles</title><desc id="desc">Original king figure carrying the pentacles emblem for King of Pentacles.</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<g data-figure="king"><path d="M80 205 H280 V455 H80 Z M55 455 H305 M80 260 L45 220 V430 L80 400 M280 260 L315 220 V430 L280 400"/><circle cx="180" cy="155" r="15"/><path d="M152 231 Q180 187 208 231"/><path d="M135 350 H225"/></g><g data-emblem="king"><path d="M145 130 L150 82 L180 115 L210 82 L215 130"/></g><g data-suit-object="1" transform="translate(285 285)"><circle r="24"/><path d="M0 -18 L5 -6 L18 -6 L8 2 L12 16 L0 8 L-12 16 L-8 2 L-18 -6 L-5 -6 Z"/></g></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">KING OF PENTACLES</text><text x="200" y="555" font-size="15">PENTACLES-14</text></g>
+</svg>

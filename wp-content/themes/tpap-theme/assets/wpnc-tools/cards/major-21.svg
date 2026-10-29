@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="world-wreath">
+<title id="title">The World</title><desc id="desc">a dancing figure inside a wreath with four corner emblems</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<ellipse cx="200" cy="310" rx="112" ry="175"/><ellipse cx="200" cy="310" rx="94" ry="155" stroke-width="2"/><circle cx="200" cy="225" r="12"/><path d="M177 287 Q200 257 223 287"/><path d="M175 305 L140 365 M225 305 L260 365 M170 265 L135 225 M230 265 L265 225"/><circle cx="70" cy="120" r="24"/><path d="M305 100 l25 40 h-50 z"/><rect x="48" y="455" width="44" height="44"/><path d="M305 455 l25 44 h-50 z"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE WORLD</text><text x="200" y="555" font-size="15">MAJOR-21</text></g>
+</svg>

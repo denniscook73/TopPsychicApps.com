@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="hierophant-keys">
+<title id="title">The Hierophant</title><desc id="desc">a teacher beneath an arch with crossed keys and two listeners</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M85 445 V205 Q85 105 200 105 Q315 105 315 205 V445 M118 445 V210 M282 445 V210"/><circle cx="200" cy="165" r="15"/><path d="M172 241 Q200 197 228 241"/><path d="M165 335 H235"/><path d="M175 135 H225 M200 105 V160 M175 420 l50-50 M225 420 l-50-50"/><circle cx="145" cy="390" r="8"/><path d="M130 430 Q145 422 160 430"/><circle cx="255" cy="390" r="8"/><path d="M240 430 Q255 422 270 430"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE HIEROPHANT</text><text x="200" y="555" font-size="15">MAJOR-5</text></g>
+</svg>
