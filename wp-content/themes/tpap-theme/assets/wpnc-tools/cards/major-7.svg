@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="chariot-sphinxes">
+<title id="title">The Chariot</title><desc id="desc">a charioteer above two contrasting sphinxes</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M120 260 H280 L300 420 H100 Z M145 260 V180 H255 V260"/><circle cx="200" cy="145" r="9"/><path d="M182 194 Q200 177 218 194"/><path d="M100 420 L70 470 H150 Z M300 420 L250 470 H330 Z M155 315 H245"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE CHARIOT</text><text x="200" y="555" font-size="15">MAJOR-7</text></g>
+</svg>

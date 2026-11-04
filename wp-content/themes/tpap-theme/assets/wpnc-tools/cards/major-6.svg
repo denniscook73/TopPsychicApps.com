@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="lovers-angel">
+<title id="title">The Lovers</title><desc id="desc">two figures beneath an angel, sun, and central mountain</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="135" cy="300" r="12"/><path d="M112 362 Q135 332 158 362"/><circle cx="265" cy="300" r="12"/><path d="M242 362 Q265 332 288 362"/><circle cx="200" cy="120" r="9"/><path d="M182 169 Q200 152 218 169"/><path d="M165 160 Q115 135 85 185 M235 160 Q285 135 315 185"/><circle cx="200" cy="105" r="65" stroke-width="2"/><path d="M165 450 L200 365 L235 450"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE LOVERS</text><text x="200" y="555" font-size="15">MAJOR-6</text></g>
+</svg>

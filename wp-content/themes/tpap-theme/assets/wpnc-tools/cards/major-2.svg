@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="priestess-pillars">
+<title id="title">The High Priestess</title><desc id="desc">a seated priestess between two pillars beneath a crescent moon</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<rect x="78" y="130" width="62" height="320"/><rect x="260" y="130" width="62" height="320"/><path d="M90 180 H128 M272 180 H310"/><circle cx="200" cy="195" r="16"/><path d="M170 276 Q200 227 230 276"/><path d="M150 390 Q200 345 250 390 M160 410 H240"/><path d="M176 153 Q200 180 224 153 Q200 206 176 153 M145 130 Q200 95 255 130 M145 430 Q200 390 255 430"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE HIGH PRIESTESS</text><text x="200" y="555" font-size="15">MAJOR-2</text></g>
+</svg>

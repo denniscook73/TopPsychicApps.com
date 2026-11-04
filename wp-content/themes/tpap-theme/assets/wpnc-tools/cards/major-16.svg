@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="tower-lightning">
+<title id="title">The Tower</title><desc id="desc">a lightning-struck tower with a falling crown and sparks</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<path d="M125 460 V180 H275 V460 Z M115 180 H285 L265 130 H135 Z M165 220 H195 V270 H165 Z M215 310 H245 V365 H215 Z M300 70 L235 185 L285 170 L225 285 M95 260 L60 305 M305 275 L345 320 M135 140 L110 95 M270 135 L305 95 M95 340 l-35 55 M300 350 l38 60"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE TOWER</text><text x="200" y="555" font-size="15">MAJOR-16</text></g>
+</svg>

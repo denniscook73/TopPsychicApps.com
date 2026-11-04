@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="hermit-lantern">
+<title id="title">The Hermit</title><desc id="desc">a cloaked traveller carrying a lantern and staff</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="190" cy="175" r="15"/><path d="M162 251 Q190 207 218 251"/><path d="M145 380 Q190 270 235 380 Z M235 250 L275 455"/><path d="M125 240 H165 V290 H125 Z M132 240 L145 220 L158 240 M145 250 V280 M90 480 L135 420 M310 480 L270 420"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE HERMIT</text><text x="200" y="555" font-size="15">MAJOR-9</text></g>
+</svg>
