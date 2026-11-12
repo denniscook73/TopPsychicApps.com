@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="magician-table">
+<title id="title">The Magician</title><desc id="desc">a standing magician joining sky and earth above four tools</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="145" r="15"/><path d="M172 221 Q200 177 228 221"/><path d="M175 225 L128 130 M225 225 L270 330"/><path d="M92 350 H308 M112 350 V430 M288 350 V430 M125 380 H275"/><circle cx="145" cy="375" r="12"/><path d="M185 362 V390 M175 390 H195 M225 365 Q245 390 225 405 Q205 390 225 365 M260 365 l14 28 h-28 z"/><path d="M175 112 C175 82 225 82 225 112 C225 142 175 142 175 112"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE MAGICIAN</text><text x="200" y="555" font-size="15">MAJOR-1</text></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="strength-lion">
+<title id="title">Strength</title><desc id="desc">a calm figure meeting a lion beneath an infinity sign</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="160" cy="180" r="13"/><path d="M135 247 Q160 212 185 247"/><path d="M145 260 Q220 250 250 330"/><circle cx="255" cy="330" r="70"/><path d="M225 330 Q255 300 285 330 Q255 380 225 330 M135 125 C135 95 185 95 185 125 C185 155 135 155 135 125"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">STRENGTH</text><text x="200" y="555" font-size="15">MAJOR-8</text></g>
+</svg>

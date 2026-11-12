@@ -1,0 +1,41 @@
+{
+  "name": "toppsychicappscom",
+  "theme": "tpap-theme",
+  "brand": "Top Psychic Apps",
+  "domain": "toppsychicapps.com",
+  "palette": "blue",
+  "eyebrow": "YOUR NEXT READING, SIMPLIFIED",
+  "title": "Less scrolling. A better reader shortlist.",
+  "intro": "Meet the people behind the profiles. Compare approaches, prepare your questions and make a more informed choice before opening a reading app.",
+  "section": "9 reader profiles to explore before you book",
+  "standfirst": "The platform is only half the decision. The reader’s focus and communication style matter too. These profiles help you build a shortlist without treating a star score as a promise.",
+  "ids": [
+    22,
+    23,
+    25,
+    26,
+    28,
+    30,
+    31,
+    34,
+    35
+  ],
+  "topics": [
+    [
+      "relationship-reader-picks",
+      "6 profiles for relationship conversations",
+      "Love & relationships"
+    ],
+    [
+      "career-reading-picks",
+      "6 profiles for your next career question",
+      "Career & work"
+    ],
+    [
+      "first-reading-picks",
+      "6 reader profiles for a first shortlist",
+      "Destiny & life path"
+    ]
+  ],
+  "id": 48
+}

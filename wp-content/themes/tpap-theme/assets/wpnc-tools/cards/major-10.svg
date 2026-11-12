@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="fortune-wheel">
+<title id="title">Wheel of Fortune</title><desc id="desc">an eight-spoked wheel surrounded by four watchful emblems</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="300" r="125"/><circle cx="200" cy="300" r="52"/><path d="M200 300 L200 175"/><path d="M200 300 L288 212"/><path d="M200 300 L325 300"/><path d="M200 300 L288 388"/><path d="M200 300 L200 425"/><path d="M200 300 L112 388"/><path d="M200 300 L75 300"/><path d="M200 300 L112 212"/><circle cx="72" cy="150" r="20"/><circle cx="328" cy="150" r="20"/><circle cx="72" cy="455" r="20"/><circle cx="328" cy="455" r="20"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">WHEEL OF FORTUNE</text><text x="200" y="555" font-size="15">MAJOR-10</text></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="temperance-water">
+<title id="title">Temperance</title><desc id="desc">a winged figure pouring water between two cups beside a path</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="165" r="14"/><path d="M173 237 Q200 197 227 237"/><path d="M165 245 L130 330 M235 245 L270 330 M165 225 Q110 170 80 245 M235 225 Q290 170 320 245"/><path d="M105 325 Q130 300 155 325 L145 370 H115 Z M245 325 Q270 300 295 325 L285 370 H255 Z M150 340 Q200 390 250 340 M70 475 Q200 395 330 475"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">TEMPERANCE</text><text x="200" y="555" font-size="15">MAJOR-14</text></g>
+</svg>

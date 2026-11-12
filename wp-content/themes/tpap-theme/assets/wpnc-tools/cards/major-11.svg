@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="justice-scales">
+<title id="title">Justice</title><desc id="desc">a seated figure holding balanced scales and an upright sword</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="200" cy="175" r="15"/><path d="M172 251 Q200 207 228 251"/><path d="M160 365 H240 M142 405 H258"/><path d="M115 220 V400 M70 270 H160 M85 270 L70 320 H100 Z M145 270 L130 320 H160 Z M285 180 V420 M270 195 L285 160 L300 195"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">JUSTICE</text><text x="200" y="555" font-size="15">MAJOR-11</text></g>
+</svg>

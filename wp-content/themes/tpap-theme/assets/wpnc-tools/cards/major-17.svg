@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-labelledby="title desc" data-scene="star-streams">
+<title id="title">The Star</title><desc id="desc">a kneeling figure pouring two streams beneath eight stars</desc>
+<g fill="none" stroke="#f8ecd0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="16" y="16" width="368" height="568" rx="22"/><rect x="28" y="28" width="344" height="544" rx="16" stroke-width="1.5"/>
+<circle cx="180" cy="285" r="11"/><path d="M158 343 Q180 317 202 343"/><path d="M155 355 L110 430 M205 350 L255 420"/><path d="M90 405 Q120 380 145 405 L135 445 H100 Z M240 395 Q270 370 300 395 L285 440 H250 Z M118 430 Q105 470 70 490 M275 425 Q300 460 330 480 M200 90 l12 35 37 0-30 22 12 35-31-21-31 21 12-35-30-22 37 0z"/><circle cx="80" cy="150" r="7"/><circle cx="125" cy="105" r="7"/><circle cx="275" cy="105" r="7"/><circle cx="320" cy="150" r="7"/><circle cx="95" cy="230" r="7"/><circle cx="305" cy="230" r="7"/><circle cx="200" cy="210" r="7"/></g>
+<g fill="#f8ecd0" font-family="Georgia,serif" text-anchor="middle"><text x="200" y="58" font-size="18">THE STAR</text><text x="200" y="555" font-size="15">MAJOR-17</text></g>
+</svg>
